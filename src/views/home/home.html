@@ -1,0 +1,54 @@
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <legend>GET</legend>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Key</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="key" ng-model="vm.key">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Timestamps</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="key" ng-model="vm.timestamp">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-primary" ng-click="vm.get()">Get</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="text-right col-sm-2">Result</label>
+            <label class="text-left col-sm-10">{{vm.result}}</label>
+        </div>
+    </form>
+
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <legend>POST</legend>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Key</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="key" ng-model="vm.postKey">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Value</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="key" ng-model="vm.postValue">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-primary" ng-click="vm.update()">
+                    {{vm.isUpdate ? 'Updating' : ( vm.isUpdate === false ? 'Updated' : 'Update')}}
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

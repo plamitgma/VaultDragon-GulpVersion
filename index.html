@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lam Phan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css css/combined.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="main">
+    <div class="container" ng-view></div>
+</body>
+<!-- build:js scripts/app.lib.js -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/app.main.js -->
+<script src="src/js/main.js"></script>
+<script src="src/views/home/homeController.js"></script>
+<script src="src/services/homeService.js"></script>
+<!-- endbuild -->
+
+</html>
